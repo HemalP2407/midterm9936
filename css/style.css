@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+html,
+body{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+}
+
+.main-content{
+    padding: 10px 30px;
+    border: 2px solid #000;
+}
+
+.title{
+    max-width: 480px;
+    padding: 10px 40px;
+    margin: 10px auto;
+    background-color: #ffc400;
+    border-radius: 20px;
+}
+
+.images-wrapper{
+    padding: 15px;
+    border: 2px solid #000;
+}
+.second-row{
+    margin-top: 30px;
+}
+
+/* Parent Container */
+.image-wrap{
+    position: relative;
+}
+
+/* Child Text Container */
+.image-wrap div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: red;
+    color: white;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;  
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Hover on Parent Container */
+.image-wrap:hover{
+    cursor: pointer;
+}    
+
+.image-wrap:hover div{
+    width: 150px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.7;        
+}
+
+.btn{
+    max-width: 240px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #ffc400;
+    font-weight: 500;
+}
+.btn:hover,
+.btn:focus{
+    box-shadow: none;
+    background-color: #ffc400;
+    border: 1px solid #ffc400;
+}
